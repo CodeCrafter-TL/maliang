@@ -1,0 +1,57 @@
+name: 📑 Documentation
+description: Create a report to help us improve the documentation.
+labels: "📑 Documentation"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please read our [Contribution Guideline](https://xiaokang2022.github.io/maliang/en/CONTRIBUTING/) before completing this report.
+        请在填写此报告前先阅读我们的[贡献指南](https://xiaokang2022.github.io/maliang/CONTRIBUTING/)。
+  - type: input
+    id: link
+    attributes:
+      label: Documentation Link
+      description: |
+        Link to any documentation or examples that you are referencing.  
+        链接到您正在引用的任何文档或示例。
+      placeholder: ex. https://example.com
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: |
+        What is missing, unclear, or wrong in the documentation?  
+        文档中缺少、不清楚或错误的内容是什么？
+      placeholder: Tell us what find!
+    validations:
+      required: true
+  - type: textarea
+    id: suggest
+    attributes:
+      label: Suggested improvement
+      description: |
+        If you have an improvement plan, you can briefly write your ideas here.  
+        如果你有改进的方案，可以在这里简单写一下你的想法。
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: |
+        How can we get in touch with you if we need more info?  
+        如果需要更多信息，我们如何与您取得联系？
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: |
+        By submitting this issue, you agree to follow our [Code of Conduct](https://xiaokang2022.github.io/maliang/en/CODE_OF_CONDUCT/).  
+        提交此问题，即表示您同意遵守我们的[行为准则](https://xiaokang2022.github.io/maliang/CODE_OF_CONDUCT/)。
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
