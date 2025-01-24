@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 """This package is a lightweight UI framework based on `tkinter` with all UI
 drawn in `Canvas`.
+=======
+"""A lightweight UI framework based on `tkinter` with all UI drawn in `Canvas`.
+>>>>>>> 1b5d7d211af947ac60dae445b1f2e0cc3cf3d0dc
 
 * Website: https://xiaokang2022.github.io/maliang/
 * GitHub: https://github.com/Xiaokang2022/maliang

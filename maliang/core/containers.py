@@ -289,7 +289,11 @@ class Tk(tkinter.Tk, Misc):
 
         @_fixed_theme
         def toolwindow(self, value: bool | None = True) -> bool | None:
+<<<<<<< HEAD
             """Set or get whether the window is tool-window
+=======
+            """Set or get whether the window is tool-window.
+>>>>>>> 1b5d7d211af947ac60dae445b1f2e0cc3cf3d0dc
 
             * `value`: indicate whether the window is tool-window
 
@@ -299,7 +303,11 @@ class Tk(tkinter.Tk, Misc):
             return None if result == "" else bool(result)
 
         def transparentcolor(self, value: str | None = None) -> str | None:
+<<<<<<< HEAD
             """Set or get the penetration color of the window
+=======
+            """Set or get the penetration color of the window.
+>>>>>>> 1b5d7d211af947ac60dae445b1f2e0cc3cf3d0dc
 
             * `value`: the penetration color of the window
 
@@ -307,6 +315,7 @@ class Tk(tkinter.Tk, Misc):
             """
             result = self.wm_attributes("-transparentcolor", value)
             return None if result == "" else result
+<<<<<<< HEAD
     
     elif platform.system() == "Darwin":
 
@@ -329,6 +338,30 @@ class Tk(tkinter.Tk, Misc):
             """
             result = self.wm_attributes("-transparent", value)
             return None if result == 0 else result
+=======
+
+    elif platform.system() == "Darwin":
+
+        def modified(self, value: bool | None = None) -> bool | None:
+            """Set or get whether the window is modified.
+
+            * `value`: indicate whether the window is modified
+
+            This method only works on macOS!
+            """
+            result = self.wm_attributes("-modified", value)
+            return None if result == "" else bool(result)
+
+        def transparent(self, value: bool | None = None) -> bool | None:
+            """Set or get whether the window is transparent.
+
+            * `value`: indicate whether the window is transparent
+
+            This method only works on macOS!
+            """
+            result = self.wm_attributes("-transparent", value)
+            return None if result == "" else bool(result)
+>>>>>>> 1b5d7d211af947ac60dae445b1f2e0cc3cf3d0dc
 
     @typing_extensions.override
     def destroy(self) -> None:

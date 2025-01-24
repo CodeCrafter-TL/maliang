@@ -53,8 +53,6 @@ audio::-webkit-media-controls-enclosure {
     background-color: rgba(0, 0, 0, 0.0);
 }
 
-audio
-
 /*视频 iframe*/
 .video-container {
     position: relative;
